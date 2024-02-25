@@ -2,7 +2,7 @@
   margin: 0px !important;
   padding: 0px !important;
 }
-nav{
+nav {
   position: sticky;
   top: 0px;
   background-color: white;
@@ -15,8 +15,9 @@ nav{
 #search_div {
   width: 40%;
   border: 1px solid #f2f2f2;
-  border-radius: 5px;
+  border-radius: 10px;
   padding-left: 10px !important;
+  background-color: #f8f8f8;
 }
 #search_div > input {
   border: none;
@@ -35,13 +36,18 @@ nav{
   width: 85%;
   margin: auto !important;
   overflow: hidden;
-  }
+}
 .list {
   text-wrap: nowrap;
   overflow-x: scroll;
 }
 .list img {
   margin-right: 20px !important;
+}
+.category_section {
+  width: 85%;
+  margin: auto !important;
+  overflow: hidden;
 }
 .my_card {
   width: 200px;
@@ -73,8 +79,8 @@ footer {
 }
 #footer_row_3 {
   color: #666666;
-  font-size: 15px;
-  padding: 10px !important;
+  font-size: 13px !important;
+  padding: 15px !important;
 }
 #social_links {
   display: flex;
@@ -95,6 +101,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: whitesmoke;
+  height: 70px;
 }
 #footer_row_2 > p {
   color: #666666;
@@ -107,53 +115,55 @@ footer {
   gap: 10px;
 }
 #footer_row_1 {
+  margin-bottom: 35px !important;
   display: flex;
   justify-content: space-between;
 }
-#table_1{
+#table_1 {
   flex: 1;
 }
-#table_2{
+#table_2 {
   flex: 2;
 }
-table{
+table {
   width: 100%;
-  margin-top: 20px !important
+  margin-top: 20px !important;
 }
-td{
+td {
   color: #6e6e6e;
   padding: 5px !important;
 }
-@media screen and (max-width:480px){
- nav{
-  flex-direction: column;
-  gap: 10px;
- }
-  #hero_section,#vertical_lines{
-    display: none !important;
-  }
-  #search_div{
-    width: 90%;
-  }
-  #cards_cotainer{
-    margin-top: 20px !important;
-  }
-  #footer_row1{
-    flex-direction: column;
-  }
-  #table_1,#table_2{
-    text-align: center;
-    margin-top: 10px !important;
-  }
-  #footer_row2{
+@media screen and (max-width: 480px) {
+  nav {
     flex-direction: column;
     gap: 10px;
   }
-  #footer_row2>{
+  #hero_section,
+  #vertical_lines {
+    display: none !important;
+  }
+  #search_div {
+    width: 90%;
+  }
+  #cards_cotainer {
+    margin-top: 20px !important;
+  }
+  #footer_row1 {
+    flex-direction: column;
+  }
+  #table_1,
+  #table_2 {
+    text-align: center;
+    margin-top: 10px !important;
+  }
+  #footer_row2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #footer_row2 > {
     width: 100%;
   }
-  #footer_row3{
+  #footer_row3 {
     text-align: justify;
   }
-
 }
